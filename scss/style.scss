@@ -1,4 +1,14 @@
 /* ******general styles****** */
 @import "config";
 
-/* ******general styles****** */
+/* ******wrapper****** */
+.wrapper {
+  width: 100%;
+}
+/* ***header*** */
+@import "header";
+/* ***subscribe*** */
+@import "subscribe";
+
+/* ***footer*** */
+@import "footer";

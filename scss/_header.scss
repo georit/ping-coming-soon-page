@@ -1,0 +1,26 @@
+header {
+  padding: 5rem 10% 1.5rem;
+  text-align: center;
+  width: 100%;
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  .main-heading {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    padding-bottom: 1rem;
+
+    .bold-text {
+      color: $veryDarkBlue;
+      font-weight: bold;
+    }
+  }
+
+  .sub-heading {
+    color: $veryDarkBlue;
+    font-size: 0.9rem;
+  }
+}

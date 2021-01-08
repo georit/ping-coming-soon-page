@@ -1,0 +1,77 @@
+.subscribe {
+  padding: 0 10%;
+  width: 100%;
+
+  .subscribe-form {
+    margin: 0 auto;
+    max-width: 420px;
+    padding: 0 3% 2rem;
+    width: 100%;
+
+    label,
+    .subscribe-input,
+    .btn-submit-form {
+      width: 100%;
+    }
+
+    .subscribe-input,
+    .btn-submit-form {
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+
+    .subscribe-input {
+      border: 1px solid $paleBlue;
+      color: $veryDarkBlue;
+      font-family: inherit;
+      padding-left: 2rem;
+      &::placeholder {
+        color: $paleBlue;
+      }
+    }
+
+    .error-message {
+      color: $lightRed;
+      display: none;
+      font-size: 0.7rem;
+      font-style: italic;
+      padding-top: 3px;
+      text-align: center;
+    }
+
+    .btn-submit-form {
+      background-color: $blue;
+      box-shadow: 0 4px 12px lighten($blue, 20%);
+      color: $white;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    &.error {
+      .subscribe-input {
+        border: 1px solid $lightRed;
+      }
+
+      .error-message {
+        display: block;
+      }
+
+      .btn-submit-form {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .subscribe-img-container {
+    margin: 0 auto;
+    max-width: 446px;
+    width: 100%;
+
+    .subscribe-img {
+      width: 100%;
+    }
+  }
+}

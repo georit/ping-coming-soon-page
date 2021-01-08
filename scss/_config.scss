@@ -7,8 +7,16 @@ $lightRed: hsl(354, 100%, 66%);
 // ***neutral colors***
 $gray: hsl(0, 0%, 59%);
 $veryDarkBlue: hsl(209, 33%, 12%);
+$white: hsl(0, 0%, 100%);
 // ***fonts***
 $fontFamily: "Libre Franklin", sans-serif;
+// ***mixins***
+@mixin flex($dir, $align, $justify) {
+  display: flex;
+  flex-flow: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
 
 // ******general styles******
 * {
@@ -18,6 +26,8 @@ $fontFamily: "Libre Franklin", sans-serif;
 }
 
 body {
+  background-color: $white;
+  color: $gray;
   font-family: $fontFamily;
   font-size: 20px;
   font-weight: 300;
@@ -25,8 +35,16 @@ body {
   min-width: 100vw;
   max-width: 1980px;
   overflow: auto;
+  position: relative;
 }
 
 img {
   max-width: 100%;
+}
+
+a:link,
+a:visited {
+  color: $blue;
+  text-decoration: none;
+  transition: all 0.2s;
 }
