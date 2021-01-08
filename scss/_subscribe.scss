@@ -8,10 +8,24 @@
     padding: 0 3% 2rem;
     width: 100%;
 
+    @media only screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 0 1rem;
+      max-width: 800px;
+    }
+
     label,
     .subscribe-input,
     .btn-submit-form {
       width: 100%;
+    }
+
+    label {
+      @media only screen and (min-width: 768px) {
+        grid-area: 1 / 1 / auto / span 3;
+      }
     }
 
     .subscribe-input,
@@ -39,6 +53,12 @@
       font-style: italic;
       padding-top: 3px;
       text-align: center;
+
+      @media only screen and (min-width: 768px) {
+        grid-area: 2 / 1 / auto / span 4;
+        padding-left: 2rem;
+        text-align: left;
+      }
     }
 
     .btn-submit-form {
@@ -48,6 +68,16 @@
       cursor: pointer;
       font-weight: 600;
       margin-top: 1rem;
+      transition: all 0.2s;
+
+      @media only screen and (min-width: 768px) {
+        grid-area: 1 / 4 / auto / span 1;
+        margin-top: 0;
+
+        &:hover {
+          background-color: lighten($color: $blue, $amount: 6%);
+        }
+      }
     }
 
     &.error {
@@ -61,6 +91,10 @@
 
       .btn-submit-form {
         margin-top: 1.5rem;
+
+        @media only screen and (min-width: 768px) {
+          margin-top: 0;
+        }
       }
     }
   }
@@ -69,6 +103,10 @@
     margin: 0 auto;
     max-width: 446px;
     width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      max-width: 550px;
+    }
 
     .subscribe-img {
       width: 100%;

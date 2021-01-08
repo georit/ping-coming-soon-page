@@ -13,6 +13,10 @@ header {
     letter-spacing: 1.5px;
     padding-bottom: 1rem;
 
+    @media only screen and (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+
     .bold-text {
       color: $veryDarkBlue;
       font-weight: bold;
@@ -22,5 +26,9 @@ header {
   .sub-heading {
     color: $veryDarkBlue;
     font-size: 0.9rem;
+
+    @media only screen and (min-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
 }

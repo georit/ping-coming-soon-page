@@ -52,6 +52,12 @@ header .main-heading {
   padding-bottom: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  header .main-heading {
+    font-size: 1.8rem;
+  }
+}
+
 header .main-heading .bold-text {
   color: #151f29;
   font-weight: bold;
@@ -60,6 +66,12 @@ header .main-heading .bold-text {
 header .sub-heading {
   color: #151f29;
   font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header .sub-heading {
+    font-size: 1.1rem;
+  }
 }
 
 /* ***subscribe*** */
@@ -75,10 +87,26 @@ header .sub-heading {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 0 1rem;
+    max-width: 800px;
+  }
+}
+
 .subscribe .subscribe-form label,
 .subscribe .subscribe-form .subscribe-input,
 .subscribe .subscribe-form .btn-submit-form {
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-form label {
+    grid-area: 1 / 1 / auto / span 3;
+  }
 }
 
 .subscribe .subscribe-form .subscribe-input,
@@ -109,6 +137,14 @@ header .sub-heading {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-form .error-message {
+    grid-area: 2 / 1 / auto / span 4;
+    padding-left: 2rem;
+    text-align: left;
+  }
+}
+
 .subscribe .subscribe-form .btn-submit-form {
   background-color: #4f7df3;
   box-shadow: 0 4px 12px #aec3f9;
@@ -116,6 +152,17 @@ header .sub-heading {
   cursor: pointer;
   font-weight: 600;
   margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-form .btn-submit-form {
+    grid-area: 1 / 4 / auto / span 1;
+    margin-top: 0;
+  }
+  .subscribe .subscribe-form .btn-submit-form:hover {
+    background-color: #6b92f5;
+  }
 }
 
 .subscribe .subscribe-form.error .subscribe-input {
@@ -130,10 +177,22 @@ header .sub-heading {
   margin-top: 1.5rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-form.error .btn-submit-form {
+    margin-top: 0;
+  }
+}
+
 .subscribe .subscribe-img-container {
   margin: 0 auto;
   max-width: 446px;
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe .subscribe-img-container {
+    max-width: 550px;
+  }
 }
 
 .subscribe .subscribe-img-container .subscribe-img {
@@ -160,13 +219,23 @@ footer .social-media {
 footer .social-media .social-media-link-container {
   border: 1px solid #ebf0ff;
   border-radius: 50%;
+  cursor: pointer;
   margin-right: 1rem;
   height: 30px;
+  transition: all 0.2s;
   width: 30px;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
+}
+
+footer .social-media .social-media-link-container:hover {
+  background-color: #4f7df3;
+}
+
+footer .social-media .social-media-link-container:hover i {
+  color: white;
 }
 
 footer .social-media .social-media-link-container:last-child {

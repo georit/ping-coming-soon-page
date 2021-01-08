@@ -12,10 +12,20 @@ footer {
     .social-media-link-container {
       border: 1px solid lighten($paleBlue, 8%);
       border-radius: 50%;
+      cursor: pointer;
       margin-right: 1rem;
       height: 30px;
+      transition: all 0.2s;
       width: 30px;
       @include flex(row, center, center);
+
+      &:hover {
+        background-color: $blue;
+
+        i {
+          color: $white;
+        }
+      }
 
       &:last-child {
         margin-right: 0;
