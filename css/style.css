@@ -6,8 +6,9 @@
 }
 
 body {
-  font-family: serif;
+  font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
+  font-weight: 300;
   min-height: 100vh;
   min-width: 100vw;
   max-width: 1980px;
@@ -17,3 +18,5 @@ body {
 img {
   max-width: 100%;
 }
+
+/* ******general styles****** */

@@ -15,9 +15,71 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./vendors/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <img
+          src="./images/logo.svg"
+          alt="Logo"
+          class="logo"
+          width="86"
+          height="26"
+        />
+        <h1 class="main-heading">
+          We are launching <span class="bold-text">soon!</span>
+        </h1>
+        <p class="sub-heading">Subscribe and get notified</p>
+      </header>
+      <div class="subscribe">
+        <form class="subscribe-form" id="subscribe-form">
+          <label for="subscribe-input">
+            <input
+              type="email"
+              name="subscribe-input"
+              id="subscribe-input"
+              placeholder="Your email address..."
+            />
+          </label>
+          <button
+            class="btn-submit-form"
+            id="btn-submit-form"
+            form="subscribe-form"
+          >
+            Notify Me
+          </button>
+        </form>
+        <div class="subscribe-img-container">
+          <img
+            src="./images/illustration-dashboard.png"
+            alt="Illustration of a dashboard"
+            class="subscribe-img"
+          />
+        </div>
+      </div>
+      <footer>
+        <div class="social-media">
+          <div class="social-media-link-container">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="social-media-link-container">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="social-media-link-container">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <p class="copy"></p>
+      </footer>
+    </div>
     <!-- ******scripts****** -->
     <script src="./js/script.js"></script>
   </body>
