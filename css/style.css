@@ -230,12 +230,13 @@ footer .social-media .social-media-link-container {
   justify-content: center;
 }
 
-footer .social-media .social-media-link-container:hover {
-  background-color: #4f7df3;
-}
-
-footer .social-media .social-media-link-container:hover i {
-  color: white;
+@media only screen and (min-width: 768px) {
+  footer .social-media .social-media-link-container:hover {
+    background-color: #4f7df3;
+  }
+  footer .social-media .social-media-link-container:hover i {
+    color: white;
+  }
 }
 
 footer .social-media .social-media-link-container:last-child {

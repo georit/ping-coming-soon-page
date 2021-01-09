@@ -19,11 +19,13 @@ footer {
       width: 30px;
       @include flex(row, center, center);
 
-      &:hover {
-        background-color: $blue;
+      @media only screen and (min-width: 768px) {
+        &:hover {
+          background-color: $blue;
 
-        i {
-          color: $white;
+          i {
+            color: $white;
+          }
         }
       }
 
