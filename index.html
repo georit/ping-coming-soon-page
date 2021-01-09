@@ -34,7 +34,7 @@
         <p class="sub-heading">Subscribe and get notified</p>
       </header>
       <div class="subscribe">
-        <form class="subscribe-form" id="subscribe-form">
+        <form class="subscribe-form" id="subscribe-form" novalidate>
           <label for="subscribe-input">
             <input
               type="email"
@@ -44,7 +44,7 @@
               placeholder="Your email address..."
             />
           </label>
-          <p class="error-message">Error message goes here</p>
+          <p class="error-message" id="error-message"></p>
           <button
             class="btn-submit-form"
             id="btn-submit-form"
